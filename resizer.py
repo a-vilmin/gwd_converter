@@ -22,13 +22,15 @@ def resizer():
     i = 0    
     for pic in pictures:
 
-        img = Image.open(pic)
-        img.save(pic, quality = 20)
-        
         type = pic.split('.')[1]
         new_name = time.strftime("%Y-%m-%d")+"-"+venue+"-"+str(i)+"."+type
         os.rename(pic, new_name)
         i += 1
+        
+        img = Image.open(new_name)
+        img = img.resize((600, 400), Image.ANTIALIAS)
+        img.save(new_name, quality = 90) 
+        
         
 if __name__ == '__main__':
     resizer()
