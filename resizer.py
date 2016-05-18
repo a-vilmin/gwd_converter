@@ -1,5 +1,5 @@
 import os, glob, time, sys
-from wand.image import Image
+from PIL import Image
 from math import floor
 
 def resizer():
@@ -21,12 +21,9 @@ def resizer():
 
     i = 0    
     for pic in pictures:
-        with Image(filename = pic) as img:
-            wid = float(img.width)
-            hi = float(img.height)
-            print(str(wid) + " " + str(hi))
-            #img.resize(floor(wid * .1), floor(hi * .1))
-            img.save(filename = pic)
+
+        img = Image.open(pic)
+        img.save(pic, quality = 20)
         
         type = pic.split('.')[1]
         new_name = time.strftime("%Y-%m-%d")+"-"+venue+"-"+str(i)+"."+type
