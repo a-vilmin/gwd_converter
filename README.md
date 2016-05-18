@@ -1,9 +1,14 @@
 # GEEKS WHO DRINK FILE FORMATTER!!
 Directions for making your life easy:
+
 1) Put files you want to Geek-a-fy into the directory containing the resizer.py file
+
 2) Open the directory in a terminal.
+
 3) Run "python3 resizer.py <YOUR VENUE NAME>"
+
 4) ???
+
 5) Profit!!
 
 
