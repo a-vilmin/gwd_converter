@@ -5,7 +5,7 @@ Directions for making your life easy:
 
 2) Open the directory in a terminal.
 
-3) Run "python3 resizer.py <YOUR VENUE NAME>"
+3) Run "python3 resizer.py \<YOUR VENUE NAME\>"
 
 4) ???
 
