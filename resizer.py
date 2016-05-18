@@ -1,6 +1,5 @@
 import os, glob, time, sys
 from PIL import Image
-from math import floor
 
 def resizer():
     """opens all files in CWD, resizes to 600x400, compresses a little, and renames to
