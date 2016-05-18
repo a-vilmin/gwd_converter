@@ -3,7 +3,7 @@ from PIL import Image
 from math import floor
 
 def resizer():
-    """opens all files in CWD, resizes to 10% of original file, and renames to
+    """opens all files in CWD, resizes to 600x400, compresses a little, and renames to
     GWD specs"""
     
     filetypes = ('*.png','*.jpg')
