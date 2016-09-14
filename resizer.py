@@ -27,7 +27,7 @@ def resizer():
         i += 1
         
         img = Image.open(new_name)
-        img = img.resize((600, 400), Image.ANTIALIAS)
+        img = img.resize((400, 300), Image.ANTIALIAS)
         img.save(new_name, quality = 90) 
         
         
